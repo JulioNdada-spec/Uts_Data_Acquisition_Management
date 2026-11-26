@@ -1,8 +1,8 @@
 # Analisis Wisatawan Mancanegara ke Bali 2025
 
 ## Identitas
-- **Nama:** Maria Indriani Lelu
-- **NIM:** 2501010335
+- **Nama:** Mario julio rusbugowa ndada
+- **NIM:** 2501010227
 - **Kelas:** F
 
 ## Deskripsi Proyek
