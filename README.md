@@ -44,3 +44,12 @@ Negara asal terbanyak: Australia
 - Total per bulan adalah data real dari BPS.
 - Rincian per negara adalah estimasi dari proporsi, bukan angka resmi per negara dari BPS.
 - Data cuaca diambil untuk titik Denpasar (latitude -8.65, longitude 115.2167).
+
+## Provenance / Asal Data
+
+| Dataset | Sumber URL | Tanggal Diakses | Lisensi |
+| :--- | :--- | :--- | :--- |
+| Wisman Bali Bulanan | https://bali.bps.go.id/ | 27 Nov 2026 | Publik BPS |
+| Kunjungan Tanah Lot | https://en.wikipedia.org/wiki/Tourism_in_Indonesia | 27 Nov 2026 | CC BY-SA Wikipedia |
+
+**Catatan Jujur:** Rincian per negara 11 negara dan data bulanan 2025 untuk Tanah Lot tidak tersedia secara lengkap di halaman Wikipedia tersebut. Data yang dipakai adalah data yang tersedia dari BPS dan dijelaskan keterbatasannya di notebook.
