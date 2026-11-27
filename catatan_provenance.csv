@@ -1,6 +1,6 @@
-Sumber,URL
-Dataset Wisatawan Bali (CSV),https://bali.bps.go.id
-Open-Meteo Historical Weather API,"https://archive-api.open-meteo.com/v1/archive?latitude=-8.65&longitude=115.2167&start_date=2025-01-01&end_date=2025-10-01&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&timezone=Asia%2FMakassar"
-Wikipedia Daftar Tempat Wisata di Bali,https://id.wikipedia.org/wiki/Daftar_tempat_wisata_di_Bali
-Wikipedia Kabupaten dan Kota di Bali,https://id.wikipedia.org/wiki/Daftar_kabupaten_dan_kota_di_Bali
-Wikipedia Tourism in Indonesia (Scraping Etis),https://en.wikipedia.org/wiki/Tourism_in_Indonesia
+Sumber,URL,Tanggal Akses,Cara Ambil,Lisensi,RDS
+Dataset Wisatawan Bali,https://bali.bps.go.id,2026-11-27,Download CSV dari website BPS,Data Terbuka BPS - Boleh dipakai dengan menyebut sumber,Jumlah kunjungan wisman per bulan dan per kebangsaan
+Open-Meteo Historical Weather API,https://archive-api.open-meteo.com/v1/archive?latitude=-8.65&longitude=115.21,2026-11-27,API Request via Python requests,CC BY 4.0 - Open-Meteo,Suhu dan curah hujan harian Bali
+Wikipedia Daftar Tempat Wisata di Bali,https://id.wikipedia.org/wiki/Daftar_tempat_wisata_di_Bali,2026-11-27,Scraping Etis - Cek robots.txt dulu,CC BY-SA 4.0 - Wikipedia,Nama dan lokasi objek wisata di Bali - bukan angka kunjungan
+Wikipedia Kabupaten dan Kota di Bali,https://id.wikipedia.org/wiki/Daftar_kabupaten_dan_kota_di_Bali,2026-11-27,Scraping Etis - Cek robots.txt dulu,CC BY-SA 4.0 - Wikipedia,Daftar 9 kabupaten/kota di Bali untuk pemetaan wilayah
+Wikipedia Tourism in Indonesia,https://en.wikipedia.org/wiki/Tourism_in_Indonesia,2026-11-27,Scraping Etis - Cek robots.txt dulu - Hanya ambil teks deskriptif,CC BY-SA 4.0 - Wikipedia,Gambaran umum pariwisata Indonesia - TIDAK berisi angka kunjungan bulanan Tanah Lot 2025
