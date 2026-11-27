@@ -6,50 +6,13 @@
 - **Kelas:** F
 
 ## Deskripsi Proyek
-Proyek ini menganalisis kunjungan wisatawan mancanegara ke Bali selama Januari - Desember 2025, berdasarkan total kunjungan dari BPS Provinsi Bali dan distribusinya per negara asal.
+Proyek ini mendokumentasikan proses akuisisi dan manajemen data pariwisata Bali, dengan fokus pada provenance dan verifikasi sumber data.
 
-## Struktur Folder
-- `data/raw/download.csv` : Data utama wisatawan mancanegara
-- `data/raw/data_cuaca.csv` : Data cuaca harian Bali dari Open-Meteo
-- `data/raw/data_tempat_wisata.csv` : Daftar tempat wisata di Bali
-- `catatan_provenance.csv` : Daftar sumber data
-- `Proses/` : Catatan proses cleaning dan analisis
+## Sumber Data yang Digunakan
+1. API: Open-Meteo (Cuaca Denpasar) - file: proses/api_bersih.json
+2. Scraping: Wikipedia - Tourism in Bali (hanya judul, ringkasan, dan URL) - file: data/scraping.json
 
-## Isi Data Utama (download.csv)
-File ini berisi 132 baris data (12 bulan x 11 kategori negara).
+## Catatan Kejujuran Data
+File-file yang berisi angka estimasi / tidak bisa diverifikasi sumbernya (data_gabungan.csv, download_bersih.csv, screaping_bersih.html) sudah DIHAPUS dari repo ini pada tanggal 27 Nov 2026, karena tidak memenuhi standar provenance data.
 
-Kolom:
-- `tahun` : 2025
-- `bulan` : 1-12 (Januari - Desember)
-- `negara_asal` : Australia, India, China, Singapura, Korea Selatan, Inggris, Prancis, Amerika Serikat, Malaysia, Jepang, Lainnya
-- `jumlah_wisatawan_mancanegara` : Jumlah kunjungan per negara per bulan
-- `sumber` : BPS Provinsi Bali - Total kunjungan per bulan
-
-Total kunjungan 2025: 6.948.754 kunjungan
-Bulan tertinggi: Juli 2025 (697.107 kunjungan)
-Bulan terendah: Februari 2025 (450.697 kunjungan)
-Negara asal terbanyak: Australia
-
-## Sumber Data
-- Total kunjungan per bulan: BPS Provinsi Bali (https://bali.bps.go.id)
-- Rincian per negara: Estimasi dari share / proporsi negara asal BPS, karena BPS tidak mempublikasikan rincian per negara per bulan secara terbuka.
-- Cuaca: Open-Meteo Historical Weather API
-- Tempat wisata: Wikipedia - Pariwisata di Bali & Daftar Kabupaten dan Kota di Bali
-
-## Cara Menjalankan
-1. Buka file CSV di Excel / Google Sheets
-2. Filter berdasarkan `bulan` atau `negara_asal` untuk analisis
-
-## Catatan / Keterbatasan
-- Total per bulan adalah data real dari BPS.
-- Rincian per negara adalah estimasi dari proporsi, bukan angka resmi per negara dari BPS.
-- Data cuaca diambil untuk titik Denpasar (latitude -8.65, longitude 115.2167).
-
-## Provenance / Asal Data
-
-| Dataset | Sumber URL | Tanggal Diakses | Lisensi |
-| :--- | :--- | :--- | :--- |
-| Wisman Bali Bulanan | https://bali.bps.go.id/ | 27 Nov 2026 | Publik BPS |
-| Kunjungan Tanah Lot | https://en.wikipedia.org/wiki/Tourism_in_Indonesia | 27 Nov 2026 | CC BY-SA Wikipedia |
-
-**Catatan Jujur:** Rincian per negara 11 negara dan data bulanan 2025 untuk Tanah Lot tidak tersedia secara lengkap di halaman Wikipedia tersebut. Data yang dipakai adalah data yang tersedia dari BPS dan dijelaskan keterbatasannya di notebook.
+Repo ini hanya mempertahankan data yang sumbernya jelas dan bisa diverifikasi ulang.
